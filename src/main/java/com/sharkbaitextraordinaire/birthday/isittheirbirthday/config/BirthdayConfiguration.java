@@ -11,16 +11,16 @@ import java.time.MonthDay;
 public class BirthdayConfiguration {
 
     @NotEmpty
-    private String celebratorName;
+    private String celebrantName;
     // MonthDay is formatted "--MM-dd", like "--11-14" or "--12-03"
     private MonthDay birthdayDate;
 
-    public String getCelebratorName() {
-        return this.celebratorName;
+    public String getCelebrantName() {
+        return this.celebrantName;
     }
 
-    public void setCelebratorName(String celebratorName) {
-        this.celebratorName = celebratorName;
+    public void setCelebrantName(String celebrantName) {
+        this.celebrantName = celebrantName;
     }
 
     public MonthDay getBirthdayDate() {

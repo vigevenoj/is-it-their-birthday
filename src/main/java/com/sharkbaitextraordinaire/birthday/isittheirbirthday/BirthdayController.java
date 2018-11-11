@@ -7,6 +7,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.time.MonthDay;
+import java.time.ZoneId;
+
 @Controller
 public class BirthdayController {
 
@@ -17,13 +20,18 @@ public class BirthdayController {
         this.birthdayConfiguration = birthdayConfiguration;
     }
 
-    // TODO inject our user's name from the application configuration
-    // TODO inject our user's birthday from the application configuration
-    // TODO compare current date (plus skew) to user's birthday from configuration
-
     @RequestMapping("/")
     public String isItTheirBirthday(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
-        model.addAttribute("name", birthdayConfiguration.getCelebratorName());
+        model.addAttribute("name", birthdayConfiguration.getCelebrantName());
+        model.addAttribute("title", "is it " + birthdayConfiguration.getCelebrantName() + "'s birthday today?");
+        // TODO we should probably use some skew for comparison, but this works for now
+        ZoneId tz = ZoneId.of("America/Los_Angeles");
+        MonthDay today = MonthDay.now(tz);
+        if (today.equals(birthdayConfiguration.getBirthdayDate())) {
+            model.addAttribute("answer", "YES");
+        } else {
+            model.addAttribute("answer", "NO");
+        }
         return "index";
     }
 }

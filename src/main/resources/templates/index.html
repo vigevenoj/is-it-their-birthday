@@ -2,9 +2,10 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
-    <title>Hello Thymeleaf!</title>
+    <title th:text="${title}">Title of my page</title>
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-<p th:text="'Hello, ' + ${name} + '!'" />
+<p th:text="${answer}" />
 </body>
 </html>
