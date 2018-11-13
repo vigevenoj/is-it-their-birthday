@@ -44,6 +44,11 @@ I don't know why you'd want to add something, but if you think it'd be good,
 
 I wrote this as a bit of a joke.
 
+Version 0.0.1 does what it needs to do:
+* Accepts a name and a day of a month
+* Says "NO" if it is not the correct day of the month
+* Says "YES" if it is the correct day of the month (in Pacific time)
+
 ## License
 
 Apache License 2.0, just like Spring Boot
