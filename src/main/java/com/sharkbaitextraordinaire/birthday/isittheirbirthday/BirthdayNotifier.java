@@ -8,9 +8,9 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 @Component
-public class BirthdayChecker {
+public class BirthdayNotifier {
 
-    private static final Logger log = LoggerFactory.getLogger(BirthdayChecker.class);
+    private static final Logger log = LoggerFactory.getLogger(BirthdayNotifier.class);
     private BirthdayConfiguration birthdayConfiguration;
 
     @Autowired
