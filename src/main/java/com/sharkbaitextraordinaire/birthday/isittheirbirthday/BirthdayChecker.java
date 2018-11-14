@@ -2,10 +2,12 @@ package com.sharkbaitextraordinaire.birthday.isittheirbirthday;
 
 import com.sharkbaitextraordinaire.birthday.isittheirbirthday.config.BirthdayConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.time.MonthDay;
 import java.time.ZoneId;
 
+@Component
 public class BirthdayChecker {
 
     private BirthdayConfiguration birthdayConfiguration;
