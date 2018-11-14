@@ -12,10 +12,15 @@ public class BirthdayNotifier {
 
     private static final Logger log = LoggerFactory.getLogger(BirthdayNotifier.class);
     private BirthdayConfiguration birthdayConfiguration;
+    private BirthdayChecker birthdayChecker;
 
     @Autowired
     public void setBirthdayConfiguration(BirthdayConfiguration birthdayConfiguration) {
         this.birthdayConfiguration = birthdayConfiguration;
+    }
+
+    public void setBirthdayChecker(BirthdayChecker birthdayChecker) {
+        this.birthdayChecker = birthdayChecker;
     }
 
     // run this check at midnight every day:
