@@ -48,6 +48,7 @@ Version 0.0.1 does what it needs to do:
 * Accepts a name and a day of a month
 * Says "NO" if it is not the correct day of the month
 * Says "YES" if it is the correct day of the month (in Pacific time)
+* Exposes an API at /api/isitreallythough that returns a json {"answer": "YES"} or {"answer": "NO" }, because machines should be able to celebrate our birthdays.
 
 ## License
 
