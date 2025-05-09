@@ -1,4 +1,4 @@
-# Is is their birthday?
+# Is it their birthday?
 
 You have a friend whose birthday you forget? A significant other whose birthday you keep thinking is like a month off of where it really is?
 
