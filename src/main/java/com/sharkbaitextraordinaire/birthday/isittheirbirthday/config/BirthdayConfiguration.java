@@ -3,8 +3,8 @@ package com.sharkbaitextraordinaire.birthday.isittheirbirthday.config;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Pattern;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Pattern;
 import java.time.MonthDay;
 
 @Component
