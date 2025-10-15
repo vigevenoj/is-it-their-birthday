@@ -41,6 +41,11 @@ I don't know why you'd want to add something, but if you think it'd be good,
 
 ## History
 
+Version 0.0.2:
+* updated to Java 21, spring boot 3.5, and junit 5
+
+---
+
 I wrote this as a bit of a joke.
 
 Version 0.0.1 does what it needs to do:
