@@ -12,14 +12,14 @@ This project is for you, and also for me for the same reason.
 
 ## Installation
 
-`mvn clean package` to build the jar and then set the required environment variables or use one of the other ways to configure a Spring Boot application.
+`gradle clean build` to build the jar and then set the required environment variables or use one of the other ways to configure a Spring Boot application.
 
 The environment variables required are
 
 1. `BIRTHDAYDATE`, the date of the birthday. Formatted as `--MM-dd`, like `--11-14` for November 14
 2. `CELEBRANTNAME`, the name of the person whose birthday you want to talk about.
 
-Then, you can run the application like this: `BIRTHDAYDATE="--11-14" CELEBRANTNAME=Christina java -jar target/is-it-their-birthday-0.0.1-SNAPSHOT.jar`
+Then, you can run the application like this: `BIRTHDAYDATE="--11-14" CELEBRANTNAME=Christina java -jar target/is-it-their-birthday-0.0.3-SNAPSHOT.jar`
 
 While running, the application exposes a health check at `/actuator/health` and a simple web page stating if it is the person's birthday or not.
 
@@ -33,13 +33,15 @@ I don't know why you'd want to add something, but if you think it'd be good,
 
 1. Fork this project
 2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
+3. Commit your changes: `git commit -m 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request back here
 
 **[Back to top](#table-of-contents)**
 
 ## History
+Version 0.0.3:
+* Migrated from Maven to Gradle
 
 Version 0.0.2:
 * updated to Java 21, spring boot 3.5, and junit 5

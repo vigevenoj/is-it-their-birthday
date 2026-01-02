@@ -5,6 +5,6 @@ RUN gradle build
 
 
 FROM eclipse-temurin:21
-COPY --from=toolchain /home/gradle/project/build/libs/is-it-their-birthday-0.0.2-SNAPSHOT.jar /opt/is-it-their-birthday-0.0.2-SNAPSHOT.jar
-ENTRYPOINT ["java", "-jar", "/opt/is-it-their-birthday-0.0.2-SNAPSHOT.jar"]
+COPY --from=toolchain /home/gradle/project/build/libs/is-it-their-birthday-0.0.3-SNAPSHOT.jar /opt/is-it-their-birthday-0.0.3-SNAPSHOT.jar
+ENTRYPOINT ["java", "-jar", "/opt/is-it-their-birthday-0.0.3-SNAPSHOT.jar"]
 EXPOSE 8080
